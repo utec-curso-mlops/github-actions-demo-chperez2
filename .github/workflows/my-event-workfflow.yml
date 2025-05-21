@@ -1,9 +1,11 @@
 name: My Event Workflow
 on: 
     push:
-      branches:
-        - "master"
-        - "main"
+        branches:
+            - "master"
+            - "main"
+        paths:
+            - "**.py"
 jobs:
   model-ci:
     runs-on: ubuntu-latest
